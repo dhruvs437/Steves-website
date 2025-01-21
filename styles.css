@@ -1,0 +1,731 @@
+@font-face {
+  font-family: "D Day Stencil SC";
+  font-style: normal;
+  font-weight: normal;
+  src: url("./font/DDayStencilSC-Regular.ttf");
+}
+@font-face {
+  font-family: "Gotham Black";
+  font-style: normal;
+  font-weight: normal;
+  src: url("./font/Gotham-Black.otf");
+}
+@font-face {
+  font-family: "Gotham Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("./font/Gotham-Bold.otf");
+}
+@font-face {
+  font-family: "Gotham Bold";
+  font-style: italic;
+  font-weight: normal;
+  src: url("./font/Gotham-BoldItalic.otf");
+}
+@font-face {
+  font-family: "Gotham Bold";
+  font-style: oblique;
+  font-weight: normal;
+  src: url("./font/Gotham-BoldItalic.otf");
+}
+@font-face {
+  font-family: "Gotham Book";
+  font-style: normal;
+  font-weight: 300;
+  src: url("./font/Gotham-Book.otf");
+}
+@font-face {
+  font-family: "Gotham Medium";
+  font-style: normal;
+  font-weight: 300;
+  src: url("./font/Gotham-Medium.otf");
+}
+@font-face {
+  font-family: "Minion Pro";
+  font-style: normal;
+  font-weight: normal;
+  src: url("./font/MinionPro-Regular.otf");
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+  overflow-x: hidden;
+}
+
+
+.main-header {
+  background-color: #191919;
+  color: white;
+  padding-left: 100px;
+  padding-right: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.logo img {
+  max-height: 100px;
+  width: auto;
+}
+
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.main-nav li {
+  margin: 0 15px;
+  color: #f05e23;
+}
+
+.main-nav li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-family: "Gotham Medium", sans-serif;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 300;
+}
+
+.main-nav li a.active {
+  color: #f05e23;
+}
+
+/* HERO SECTION */
+.hero-root-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 50%;
+}
+.hero {
+  width: 100%;
+  background: url("./images/Cover.png") no-repeat center center/cover;
+  background-color: #c9cbcc;
+  padding-left: 100px;
+  padding-top: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 500px;
+}
+.hero-container {
+  display: flex;
+  justify-content:left;
+  align-items: left;
+}
+
+.hero-left {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  width: 40%;
+  text-align: left;
+}
+.free-text{
+  width: 120%;
+}
+.divider {
+  border: none;
+  border-top: 1px solid #e0e0e0;
+  margin: 20px 0;
+}
+.vertical-divider {
+  border: 1px solid #e0e0e0;
+}
+
+
+
+.hero-left p {
+  color: #ffffff;
+  font-family: "Gotham Book", sans-serif;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.hero-left .subtext {
+  margin-top: 10px;
+  color: #ffffff;
+  font-family: "Gotham Book", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 300;
+}
+
+.hero-right {
+  display: flex;
+  width: 60%;
+  justify-content: center;
+  flex-direction: column;
+}
+.book-image{
+  width: 120%;
+}
+
+/* .hero-right {
+  max-width: 100%;
+  padding-left: 1rem;
+  height: auto;
+} */
+.button-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.play-icon-container{
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  width: 40%;
+}
+.hero-cta-button {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  border: none;
+  border-radius: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-decoration: none;
+  color: #ffffff;
+  font-family: "Gotham Bold", sans-serif;
+  font-size: 17.4px;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+  background-color: #ef6126;
+}
+.read-bio-button{
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  width: 40%;
+}
+
+.hero-cta-button-outline {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  width: 100%;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 17.4px;
+  border: 2px solid #ef6126;
+}
+
+.cta-button:hover {
+  opacity: 0.8;
+}
+
+/* CONTENT SECTION */
+.content-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #c9cbcc;
+}
+.distorted-image {
+  position: relative;
+  width: 100%;
+  background: url("./images/2.png") no-repeat center center / cover;
+  background-color: #ef6126;
+}
+.distorted-image-img {
+  width: 100%;
+}
+.content-container {
+  position: relative;
+  top: -140px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 40px;
+}
+.new-book-image {
+  width: 90%;
+}
+.content-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-left: 3rem;
+  width: 40%;
+}
+.leading-text {
+  width: 80%;
+}
+.content-left p {
+  color: #191919;
+  font-family: "Gotham Medium", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+
+.content-bold-text {
+  color: #191919;
+  font-family: "Gotham Bold", sans-serif;
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.content-right {
+  width: 60%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.buy-now {
+  position: relative;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+}
+.image-block {
+  display: flex;
+  align-items: center;
+}
+.buy-now-button {
+  background-color: #ef6126;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: none;
+  border-radius:10px;
+  text-decoration: none;
+  font-size: 1rem;
+  display: inline-block;
+  padding: 10px 60px;
+  line-height: 1;
+}
+
+.buy-now .buy-now-button:hover {
+  opacity: 0.8;
+}
+
+.buy-now-text {
+  display: block;
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: black;
+}
+
+.cta-button-read-chapter {
+  color: #191919;
+  font-family: "Gotham Black", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: none;
+  border-radius: 10px;
+  padding: 5px; 
+  transition: background-color 0.3s ease; 
+}
+
+.play-icon {
+  margin-right: 5px; 
+}
+
+.cta-button-read-chapter:hover {
+  display: inline-block;
+  background-color: #ef6126;
+}
+
+/* MOVEMENT SECTION */
+.movement-section {
+  width: 100%;
+  position: relative;
+  background-color: #ef6126;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* overflow: hidden; */
+}
+
+.movement-container {
+  display: flex;
+  padding-right: 100px;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+/* Left Layer: Image */
+.movement-left {
+  width: 50%;
+  position: relative;
+}
+
+.movement-image {
+  width: 160%;
+  position: absolute;
+  left: -2rem;
+  top: -26rem;
+}
+
+/* Right Layer: Text Content */
+.movement-right {
+  width: 80%;
+  position: relative;
+  z-index: 3;
+}
+
+.movement-text {
+  color: white;
+  text-align: right;
+}
+
+.headline-text-h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 3px;
+  line-height: 1.1;
+}
+
+.headline-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  margin-bottom: 20px;
+}
+.highlight {
+  color: black;
+  display: inline-block;
+  font-family: "D Day Stencil SC";
+  font-size: 5rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.movement-highlight {
+  color: #ffffff;
+  font-family: "D Day Stencil SC", sans-serif;
+  font-size: 80.6px;
+  font-style: normal;
+  font-weight: normal;
+  text-transform: uppercase;
+  background-color: black;
+  display: inline-block;
+  padding: 11px;
+  letter-spacing: 2px;
+}
+
+.movement-text p {
+  color: #191919;
+  font-family: "Gotham Medium", sans-serif;
+  font-size: 19.8px;
+  font-style: normal;
+  font-weight: 300;
+}
+
+.name-highlight {
+  color: #191919;
+  font-family: "Gotham Bold", sans-serif;
+  font-size: 34px;
+  font-style: normal;
+  font-weight: normal;
+  padding: 0 5px;
+}
+
+.cta-button.read-bio {
+  background-color: transparent;
+  color: #191919;
+  font-family: "Gotham Black", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: none;
+  padding: 12px 2px;
+  border-radius: 5px;
+  display: inline-block;
+}
+.cta-button-read-bio {
+  background-color: transparent;
+  color: #191919;
+  font-family: "Gotham Black", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: none;
+  padding: 12px 12px;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+.cta-button-read-bio:hover {
+  background-color: white;
+  color: #ef6126;
+}
+.cta-button-read-bio-play-icon{
+  margin-right: 10px;
+}
+/* REVOLUTION SECTION */
+.revolution-section {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #ef6126;
+  background-image: url("./images/Steve_EO_26_BW.png");
+  background-size: cover;
+  background-position: center;
+  min-height: 500px;
+  color: white;
+  text-align: center;
+}
+
+.revolution-overlay {
+  width: 40%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Quote Text */
+.revolution-quote-text {
+  color: #000000;
+  font-family: "Gotham Bold", sans-serif;
+  font-size: 31.6px;
+  font-style: italic;
+  font-weight: normal;
+}
+.revolution-quote {
+  font-size: 1.5rem;
+  font-style: italic;
+  line-height: 1.6;
+}
+
+.quote-text {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Revolution Text */
+.revolution-text {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  transform: rotate(-10deg);
+  transform-origin: center;
+}
+.revolution-image {
+  position: relative;
+  left: 4rem;
+  top: -5rem;
+  width: 80%;
+}
+.revolution-text h1 {
+  text-transform: uppercase;
+  font-family: "Gotham Medium", sans-serif;
+  font-size: 59.8px;
+  font-style: normal;
+  font-weight: 300;
+}
+
+.revolution-cta {
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 10px;
+}
+
+/* Call-to-Action */
+.revolution-cta p {
+  color: #191919;
+  font-family: "Gotham Medium", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 300;
+}
+.revolution-cta-button-container {
+  display: flex;
+  align-items: center;
+}
+
+.revolution-cta-button {
+  display: flex;
+  padding: 6px;
+  padding-right: 20px;
+  border-radius: 10px;
+  align-items: center;
+  background-color: black;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1rem;
+}
+
+.cta-button {
+  margin-right: 5px;
+  font-weight: bold;
+}
+.play-icon {
+  color: black;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.cta-button:hover {
+  background-color: white;
+  color: #ef6126;
+}
+
+/* image-stack-container */
+.image-stack-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.stack-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* QUOTE SECTION */
+.quote-section {
+  background-color: white;
+  padding: 60px 20px;
+  text-align: center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.quote-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 600px;
+  text-align: center;
+}
+
+.quote-icon {
+  font-size: 3rem;
+  color: #ef6126;
+  margin-bottom: 20px;
+}
+
+.quote-container-text {
+  color: #000000;
+  font-family: "Gotham Medium", sans-serif;
+  font-size: 19.8px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+.quote-author {
+  color: #000000;
+  font-family: "Gotham Medium", sans-serif;
+  font-size: 19.8px;
+  font-style: normal;
+  font-weight: 300;
+  margin-top: 10px;
+}
+
+/* footer section */
+.main-footer {
+  background-color: #1a1a1a;
+  color: #fff;
+  padding: 40px 20px;
+  text-align: center;
+  box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.footer-container {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.social-media {
+  display: flex;
+  gap: 15px;
+}
+
+.social-icon img {
+  width: 30px;
+  height: 30px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.social-icon img:hover {
+  transform: scale(1.2);
+  opacity: 0.8;
+}
+
+.footer-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.footer-nav ul li {
+  font-size: 14px;
+  color: #fff;
+}
+
+.footer-nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 14px;
+}
+
+.footer-nav ul li a:hover {
+  text-decoration: underline;
+  color: #ff6347; /* Accent color */
+}
+
+.copyright {
+  font-size: 12px;
+  color: #bbb;
+  margin-top: 10px;
+}
