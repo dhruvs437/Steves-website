@@ -520,11 +520,11 @@ body {
   font-style: italic;
   font-weight: normal;
 }
-.revolution-quote {
+/* .revolution-quote {
   font-size: 1.5rem;
   font-style: italic;
   line-height: 1.6;
-}
+} */
 
 .quote-text {
   max-width: 600px;
@@ -589,16 +589,11 @@ body {
   display: inline-block;
   font-size: 1rem;
 }
-
-.cta-button {
-  margin-right: 5px;
-  font-weight: bold;
-}
-.play-icon {
-  color: black;
-  font-size: 1rem;
-  font-weight: bold;
-}
+  .play-icon {
+    color: black;
+    font-size: 1rem;
+    font-weight: bold;
+  }
 
 .cta-button:hover {
   background-color: white;
